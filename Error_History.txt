@@ -1,0 +1,17 @@
+历史报错信息 
+
+
+[ERROR] local variable 'build_parameter_stabilization_guidance' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Programming\CphamasGPT\pkgpt_optimizer.py", line 248, in run_single_agent
+    results = agent.run()
+  File "D:\Programming\CphamasGPT\agents\orchestrator.py", line 317, in run
+    s = self._main_loop(s)
+  File "D:\Programming\CphamasGPT\agents\orchestrator.py", line 381, in _main_loop
+    s = self._run_phase1_to_4(s)
+  File "D:\Programming\CphamasGPT\agents\orchestrator.py", line 563, in _run_phase1_to_4
+    guidance = build_parameter_stabilization_guidance(s.parameter_history)
+UnboundLocalError: local variable 'build_parameter_stabilization_guidance' referenced before assignment
+[PARALLEL] Compartment 3 finished (exit code 1)
+
+
